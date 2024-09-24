@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+<script src="script.js" defer></script>
+
+</head>
+
+<body id="posts-container" class="container1"> <!--esse container envolve todo o conteúdo do código-->
+
+
+    <div class="post-container"> <!--esse container envolve o conteúdo principal, que é o post-->
+        <div class="post-header"> <!--cabeçalho do post com ícone e nome de usuário-->
+            <div class="left">
+                <div class="circle">
+                    <i class="fa fa-user-circle-o"></i>  <!--ícone de usuário-->
+                </div>
+                <span>user_name</span> <!--descrição do nome do usuário-->
+            </div>
+
+            <div class="right">
+                <button id="meuBotao">Follow</button> <!--botão "Follow" com id para adicionar função-->
+            </div>
+        </div>
+
+        <div class="container2"></div> <!--conteiner que envolve a imagem do post-->
+        <div class="post-image">
+            <img src="https://i.pinimg.com/564x/35/77/e2/3577e2b8989355706f35e67863ac584d.jpg" /> <!--link da imagem-->
+        </div>
+
+        <div class="post-icons"> <!--div envolvendo os ícones do post mais uma class para estilização-->
+            <div id="post-icons-utils">
+                <i id="heart" class="fa fa-heart-o" onclick="alternarIcone()"></i> <!--ícone de "Like" com id para adicionar função-->
+                <i class="fa fa-comment-o"></i> <!--ícone de "Comentário"-->
+                <i  id="share" class="fa fa-paper-plane-o" onclick="sharePost()"></i> <!--ícone "Share" com id para adicionar função-->
+            </div>
+            <div>
+                <i  id="save" class="fa fa-bookmark-o" onclick="savePost()"></i> <!--ícone "Save" com id para adicionar função-->
+            </div>
+        </div>
+
+        <div id="comment-box" class="comment-box" style="display: none;" > <!--div para guardar o box de comentário com id para adicionar função-->
+            <textarea id="comment-text" placeholder="Escreva um comentário..."></textarea> <!--placeholder indicando ao usuário o que preencher-->
+            <button id="submit-comment">Enviar</button> <!--botão de enviar comentário-->
+        </div>
+    
+</body>
+
+</html>

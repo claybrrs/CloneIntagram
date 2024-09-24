@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+
+  }
+  
+  .post-container {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 20px 2px gray;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-header .left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .post-header .left > .circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: white;
+    width: 100px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .post-icons {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+  }
+
+  .post-icons-utils * {
+    margin-inline-end: 10px;
+  }
+
+  .circle {
+    display: flex;            /* comportamento da div */
+    justify-content: center;  /* justify-content = linha horizontal */  
+    align-items: center;      /* align-items = linha vertical */  
+    font-size: 40px;
+  }
+
+  .fa-heart{
+    color: red;
+  }
+
+  .pulse {
+    animation:pulse-animation 0.6s ease;
+  }
+
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1);
+      opacity:1;
+    } 
+
+    50% {
+      transform:scale(1.2);
+      opacity: 0.6;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+/* 
+  .heart-flutter {
+    position: relative;
+}
+
+.heart-flutter::after {
+    content: '❤️';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 24px;
+    animation: flutter-animation 1s ease forwards;
+}
+
+@keyframes flutter-animation {
+    0% {
+        top: -20px;
+        opacity: 1;
+    }
+    50% {
+        top: -60px;
+        opacity: 0.5;
+    }
+    100% {
+        top: -100px;
+        opacity: 0;
+    }
+} */
